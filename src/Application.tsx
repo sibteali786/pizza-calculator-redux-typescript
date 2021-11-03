@@ -86,7 +86,7 @@ const Calculator = ({
         onChange={(event) =>
           dispatch({
             type: 'UPDATE_NUMBER_OF_PEOPLE',
-            payload: event.target.value
+            payload: +event.target.value
           })
         }
       />
@@ -98,7 +98,7 @@ const Calculator = ({
         onChange={(event) =>
           dispatch({
             type: 'UPDATE_SLICES_PER_PERSON',
-            payload: event.target.value
+            payload: +event.target.value
           })
         }
       />
@@ -110,7 +110,7 @@ const Calculator = ({
         onChange={(event) =>
           dispatch({
             type: 'UPDATE_SLICES_PER_PIE',
-            payload: event.target.value
+            payload: +event.target.value
           })
         }
       />
